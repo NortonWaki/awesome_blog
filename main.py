@@ -12,7 +12,7 @@ class MainHandler(webapp2.RequestHandler):
         </head>
         <body>
           <form method="post">
-            <input type="texte" name="nome">
+            <input type="number" name="numero">
             <input type="submit">
           </form>
         </body>
@@ -21,8 +21,8 @@ class MainHandler(webapp2.RequestHandler):
     )
     
   def post(self):
-    texto = self.request.get("nome")
-    self.response.out.white(texto)
+    nome = self.request.get("numero")
+    self.response.out.write(int(numero)**2)
 
 app = webapp2.WSGIApplication([
   ('/', MainHandler)
