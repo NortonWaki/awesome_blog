@@ -1,1 +1,1 @@
-# Awesome Blog do Norton
+# Blog do Norton
