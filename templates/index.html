@@ -19,6 +19,14 @@
 
     Esse vai ser nossa página principal, por enquanto ainda não temos conteúdo =/
 
+    <br>
+
+    {% if logado == True %}
+    Usuário está logado!
+    {% else %}
+    Usuário não está logado!
+    {% endif %}
+
     <script src="https://storage.googleapis.com/code.getmdl.io/1.2.1/material.min.js"></script>
   </body>
 </html>
